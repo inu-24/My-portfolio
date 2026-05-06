@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inuli. | Portfolio</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-animation">
+    <div class="gradient-circle circle-1"></div>
+    <div class="gradient-circle circle-2"></div>
+    <div class="gradient-circle circle-3"></div>
+    <div class="gradient-circle circle-4"></div>
+    <div class="particles" id="particles-js"></div>
+  </div>
+
+  <!-- Theme Toggle -->
+  <div class="theme-container">
+    <button id="themeToggle" class="theme-toggle"> 
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+    </button>
+  </div>
+
+  <!-- Floating Cursor -->
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+
+  <!-- Navbar -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <h2 class="logo-text">Inuli<span class="logo-dot">.</span></h2>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active"><span>Home</span></a></li>
+          <li><a href="#about" class="nav-link"><span>About</span></a></li>
+          <li><a href="#projects" class="nav-link"><span>Projects</span></a></li>
+          <li><a href="#skills" class="nav-link"><span>Skills</span></a></li>
+          <li><a href="#contact" class="nav-link"><span>Contact</span></a></li>
+        </ul>
+        <button class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span>👋 Hello! I'm</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line">Inuli</span>
+          <span class="title-line highlight">Gunasekara</span>
+        </h1>
+        <div class="hero-subtitle">
+          <div class="typing-container">
+            <span class="typing-text">Undergraduate Software Engineer</span>
+            <span class="cursor">|</span>
+          </div>
+        </div>
+        <p class="hero-desc">
+          Crafting <span class="text-gradient">immersive digital experiences</span> through clean code and innovative design. 
+          Transforming ideas into interactive reality.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary btn-glow">
+            <span>View My Work</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span>Let's Connect</span>
+            <i class="fas fa-paper-plane"></i>
+          </a>
+          <a href="Inuli Gunasekara_CV (1).pdf" download class="btn btn-gradient">
+            <span>Download CV</span>
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+        <div class="hero-social">
+          <div class="social-label">Follow my journey</div>
+          <div class="social-icons">
+            <a href="#" class="social-icon" data-tooltip="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-icon" data-tooltip="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-icon" data-tooltip="CodePen">
+              <i class="fab fa-codepen"></i>
+            </a>
+            <a href="#" class="social-icon" data-tooltip="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-container">
+          <div class="hero-orb orb-1"></div>
+          <div class="hero-orb orb-2"></div>
+          <div class="hero-orb orb-3"></div>
+          <div class="profile-container">
+            <div class="profile-frame">
+              <img src="new.jpg" alt="Inuli Gunasekara" class="profile-img">
+              <div class="profile-glow"></div>
+            </div>
+            <div class="tech-bubbles">
+              <div class="bubble" style="--delay: 0s;">HTML</div>
+              <div class="bubble" style="--delay: 0.2s;">CSS</div>
+              <div class="bubble" style="--delay: 0.4s;">JS</div>
+              <div class="bubble" style="--delay: 0.6s;">React</div>
+              <div class="bubble" style="--delay: 0.8s;">Node.js</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <div class="scroll-text">Scroll to explore</div>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" data-count="5">5+</div>
+          <div class="stat-label">Projects Completed</div>
+          <div class="stat-icon">🚀</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-count="8">8+</div>
+          <div class="stat-label">Languages Mastered</div>
+          <div class="stat-icon">💻</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-count="100">10</div>
+          <div class="stat-label">Cups of Coffee</div>
+          <div class="stat-icon">☕</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Crafting Digital <span class="highlight">Experiences</span></h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <div class="about-intro">
+            <h3>I don't just code—I create <span class="text-gradient">memorable experiences</span></h3>
+            <p>
+              As a passionate Software Engineering undergraduate, I blend technical expertise with creative design 
+              to build solutions that are not only functional but also delightful to use.
+            </p>
+            <p>
+              My journey in tech is fueled by curiosity and a drive to solve real-world problems through elegant code 
+              and intuitive interfaces.
+            </p>
+          </div>
+          <div class="about-features">
+            <div class="feature">
+              <div class="feature-icon">✨</div>
+              <div class="feature-content">
+                <h4>Clean & Modern Design</h4>
+                <p>Creating interfaces that are both beautiful and intuitive</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">⚡</div>
+              <div class="feature-content">
+                <h4>Fast & Responsive</h4>
+                <p>Optimized performance across all devices</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🔒</div>
+              <div class="feature-content">
+                <h4>Secure & Reliable</h4>
+                <p>Building with security and scalability in mind</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="visual-card">
+            <div class="card-inner">
+              <img src="SE image.jpg" alt="Working on Project">
+              <div class="card-overlay">
+                <div class="overlay-content">
+                  <h4>Always Learning</h4>
+                  <p>Exploring new technologies daily</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">My Work</div>
+        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+        <p class="section-subtitle">A showcase of my recent work and experiments</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="fullstack">
+          <div class="project-media">
+            <img src="buynest.png" alt="BuyNest E-Commerce">
+            <div class="project-tag">Full Stack</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">BuyNest E-Commerce</h3>
+            <p class="project-desc">Complete e-commerce platform with React.js, Node.js, and MongoDB</p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Automation</span>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-media">
+            <img src="fashion.avif" alt="Dreamy Fashion">
+            <div class="project-tag">Frontend</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Dreamy Fashion</h3>
+            <p class="project-desc">A responsive e-commerce-style fashion website designed to showcase clothing products with an engaging and modern user interface.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Php</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="mobile">
+          <div class="project-media">
+            <img src="dog.webp" alt="Dog Breeds App">
+            <div class="project-tag">Mobile</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Dog Breeds Explorer</h3>
+            <p class="project-desc">Mobile app for dog breed information with API integration</p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">UI/UX</span>
+              <span class="tech-tag">Andriod Studio</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="fullstack">
+          <div class="project-media">
+            <img src="hospital.png" alt="Hospital System">
+            <div class="project-tag">Full Stack</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Hospital Management</h3>
+            <p class="project-desc">Complete hospital system with patient management and alerts</p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">NetBeans</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="security">
+          <div class="project-media">
+            <img src="security.webp" alt="Security System">
+            <div class="project-tag">Security</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">BuyNest Website Vulnerability Scanner</h3>
+            <p class="project-desc">Tool for identifying and reporting web vulnerabilities</p>
+            <div class="project-tech">
+              <span class="tech-tag">Virus</span>
+              <span class="tech-tag">Security</span>
+              <span class="tech-tag">Web</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="security">
+          <div class="project-media">
+            <img src="wellness.jpg" alt="Security System">
+            <div class="project-tag">Frontend</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Spring of Wellness Website</h3>
+            <p class="project-desc">A multi-page website developed to promote healthy living, covering areas such as nutrition, mindfulness, and fitness.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">Web</span>
+              <span class="tech-tag">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">My Arsenal</div>
+        <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="category-header">
+            <div class="category-icon">🎨</div>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML5</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">CSS3 </span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">JavaScript (ES6+)</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">React.js</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-header">
+            <div class="category-icon">⚙️</div>
+            <h3>Backend</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Java</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">SQL / MySQL</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-header">
+            <div class="category-icon">🛠️</div>
+            <h3>Tools & Others</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Git & GitHub</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Figma</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">VS Code</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">NetBeans</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-dark">
+    <div class="container">
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="section-header">
+            <div class="section-label">Get In Touch</div>
+            <h2 class="section-title">Let's Build Something <span class="highlight">Amazing</span></h2>
+            <p class="section-subtitle">Have a project in mind? Let's bring it to life!</p>
+          </div>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-content">
+                <h4>Email</h4>
+                <a href="mailto:gunasekarainuli@gmail.com">gunasekarainuli@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-content">
+                <h4>Phone</h4>
+                <a href="tel:+94778660639">+94 77 866 0639</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-content">
+                <h4>Location</h4>
+                <p>Ambalangoda, Sri Lanka</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <h4>Connect with me</h4>
+            <div class="social-icons">
+              <a href="#" class="social-btn">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="social-btn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-btn">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-btn">
+                <i class="fab fa-codepen"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required>
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required>
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" placeholder="Subject">
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+              <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+              <div class="form-line"></div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-glow">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2 class="logo-text">Inuli<span class="logo-dot">.</span></h2>
+        </div>
+        
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Navigate</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+            </ul>
+          </div>
+          <div class="link-group">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Resume</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Design Files</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">2026@Inuli Gunasekara. All rights reserved.</p>
+        <div class="footer-actions">
+          <a href="#" class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+            <span>Back to top</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
